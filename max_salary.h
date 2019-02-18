@@ -8,6 +8,6 @@
 #define SWAP(a,b) {int temp; temp=a; a=b; b=temp;}
 
 void print_array(int *arr, int size);
-void heap_permutation(int a[], int size, int n) ;
+int heap_permutation(int a[], int size, int n) ;
 
 #endif
