@@ -1,5 +1,9 @@
-#include "max_salary.h"
+//#include "max_salary.h"
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "max_salary.h"
 int * best_arr;
 
 void print_array(int *arr, int size){
@@ -50,9 +54,9 @@ int heap_permutation(int a[], int size, int n)
 } 
   
 // Code to test permutations
-int main() { 
+/*int main() { 
     int a[] = {1, 2, 3, 4}; 
     int n = sizeof a/sizeof a[0]; 
     printf("%d\n", heap_permutation(a, n, n)); 
     return 0; 
-} 
+} */
