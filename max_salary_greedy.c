@@ -31,14 +31,14 @@ int is_better(const void * best_so_far, const void *  current){ //comparator
 int greedy_algorithm(int * arr, int n){
 	qsort(arr, n, sizeof(int), is_better);
 	//make array a string
-        char str[n + 1];
+        char str[100];
         sprintf(str, "%d", arr[0]);
         for(int i = 1; i < n; i++){
                 sprintf(strlen(str) + str, "%d", arr[i]);
 //              printf("%s\n", str);
         }
 //      make string a double
-        double d = atof(str);
+        long long d = atol(str);
 	return d;
 }
 /*

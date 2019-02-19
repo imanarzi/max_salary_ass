@@ -41,15 +41,16 @@ void stress_test(){
   	while (1) {
     		//int * arr = malloc(sizeof(int) * 5);
 		//int arr[5];
-		for (int i=0; i<5; i++){
-          		arr[i] = rand() % 10 + 1;
+		int size = rand()%4 + 1;
+		for (int i=0; i<size; i++){
+          		arr[i] = rand() % 99 + 1;
     			printf("%d\n", arr[i]);
 		}
 		int n = sizeof arr/sizeof arr[0];
 //		printf("this is n: %d\n", n);
 
 		int result1 = heap_permutation(arr, n, n);
-		int result2 = greedy_algorithm(arr, 5);
+		int result2 = greedy_algorithm(arr, n);
 
 //		printf("%d\n", result2);
 		if (result1==result2)
