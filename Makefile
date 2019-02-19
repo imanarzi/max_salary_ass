@@ -13,7 +13,7 @@ test.o: test.c max_salary.h
 	$(CC) $(CFLAGS) -c test.c 
 
 test: max_salary_naive.o max_salary_greedy.o test.o
-	$(CC) $(CFLAGS) -o max_salary_naive.o max_salary_greedy.o test.o
+	$(CC) $(CFLAGS) -o test max_salary_naive.o max_salary_greedy.o test.o
 
 clean:
 	rm *.o test
